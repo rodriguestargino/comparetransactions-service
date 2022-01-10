@@ -1,5 +1,9 @@
 package application.response;
 
+/**
+ * Response message for reconciliation fields 
+*/
+
 public class ResponseMessageRegister {
 
 	private String profileName;

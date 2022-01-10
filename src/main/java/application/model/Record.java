@@ -1,5 +1,10 @@
 package application.model;
 
+/**
+ * Description record for match CSV file.
+ *  
+*/
+
 public class Record {
 	
 	private String profileName;

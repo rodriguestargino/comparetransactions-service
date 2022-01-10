@@ -10,13 +10,17 @@ import org.springframework.web.filter.CorsFilter;
 
 @Configuration
 public class WebConfig {
-
+	
+	/**
+	 *  Configuration Cors policy
+	 **/
 	@Bean
 	public FilterRegistrationBean corsFilter() {
 		UrlBasedCorsConfigurationSource source = new UrlBasedCorsConfigurationSource();
 		CorsConfiguration config = new CorsConfiguration();
 		config.setAllowCredentials(true);
 		config.addAllowedOrigin("https://comparetransactions.herokuapp.com");
+		config.addAllowedOrigin("http://localhost:4200");
 		config.addAllowedHeader("*");
 		config.addAllowedMethod("*");
 		source.registerCorsConfiguration("/**", config);

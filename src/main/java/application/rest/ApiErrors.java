@@ -3,6 +3,10 @@ package application.rest;
 import java.util.Arrays;
 import java.util.List;
 
+
+/**
+ * List of possible errors
+*/
 public class ApiErrors {
 	
 	private List<String> errors;
